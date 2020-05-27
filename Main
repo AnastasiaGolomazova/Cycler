@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] list = { 1, 3, 5 };
+            Cycler cycler = new Cycler(list);
+
+            Console.Write("Введите число повторений ");
+            int count = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < count; i++)
+            {
+                Console.WriteLine(cycler.Get_Next());
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
